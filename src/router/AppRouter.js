@@ -4,8 +4,6 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Homepage from "../pages/Homepage";
 import PaymentForm from "../pages/PaymentForm";
 
-
-
 function AppRouter() {
   return (
     <BrowserRouter>
@@ -13,8 +11,7 @@ function AppRouter() {
         <Route path="/" element={<Homepage /> } />
         <Route path="/paymentForm" element={<PaymentForm /> } />
       </Switch>
-      </BrowserRouter>
-  
+    </BrowserRouter>
   );
 }
 export default AppRouter
