@@ -1,16 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useHistory } from "react-router-dom";
 
 import "../App.css";
 
 import { GiPayMoney, GiReceiveMoney } from "react-icons/gi";
 
-
-
-
 function Homepage () {
 
   const history = useHistory();
+  
   const navigateToPayForm = () => {
     // 👇️ navigate to /contacts
     history.push('/paymentForm');
